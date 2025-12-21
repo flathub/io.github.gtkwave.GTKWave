@@ -17,8 +17,8 @@ modules:
   - name: tcl
     sources:
       - type: archive
-        url: https://sourceforge.net/projects/tcl/files/Tcl/8.6.13/tcl8.6.13-src.tar.gz
-        sha256: 43a1fae7412f61ff11de2cfd05d28cfc3a73762f354a417c62370a54e2caf066
+        url: https://sourceforge.net/projects/tcl/files/Tcl/9.0.3/tcl9.0.3-src.tar.gz
+        sha256: 2537ba0c86112c8c953f7c09d33f134dd45c0fb3a71f2d7f7691fd301d2c33a6
         x-checker-data:
           type: html
           url: https://sourceforge.net/projects/tcl/rss
@@ -29,8 +29,8 @@ modules:
   - name: tk
     sources:
       - type: archive
-        url: https://sourceforge.net/projects/tcl/files/Tcl/8.6.13/tk8.6.13-src.tar.gz
-        sha256: 2e65fa069a23365440a3c56c556b8673b5e32a283800d8d9b257e3f584ce0675
+        url: https://sourceforge.net/projects/tcl/files/Tcl/9.0.3/tk9.0.3-src.tar.gz
+        sha256: bf344efadb618babb7933f69275620f72454d1c8220130da93e3f7feb0efbf9b
         x-checker-data:
           type: html
           url: https://sourceforge.net/projects/tcl/rss
@@ -48,8 +48,8 @@ modules:
       - install -Dm644 share/appdata/io.github.gtkwave.GTKWave.metainfo.xml /app/share/metainfo/io.github.gtkwave.GTKWave.metainfo.xml
     sources:
       - type: archive
-        url: https://sourceforge.net/projects/gtkwave/files/gtkwave-gtk3-3.3.122/gtkwave-gtk3-3.3.122.tar.gz
-        sha256: 6201b5f93dcaeafa92fc0ec4ad4baeaf60acf16fc8f019bbf061cf4ebf27938a
+        url: https://sourceforge.net/projects/gtkwave/files/gtkwave-gtk3-3.3.125/gtkwave-gtk3-3.3.125.tar.gz
+        sha256: 32eb1df4dfd56e0dde17e8a08de60f20138af017a8a8ad64522f69627562c437
         x-checker-data:
           type: html
           url: https://sourceforge.net/projects/gtkwave/rss
