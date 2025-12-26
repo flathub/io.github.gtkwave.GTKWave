@@ -17,28 +17,28 @@ modules:
   - name: tcl
     sources:
       - type: archive
-        url: https://sourceforge.net/projects/tcl/files/Tcl/8.6.13/tcl8.6.13-src.tar.gz
-        sha256: 43a1fae7412f61ff11de2cfd05d28cfc3a73762f354a417c62370a54e2caf066
+        url: https://sourceforge.net/projects/tcl/files/Tcl/8.6.17/tcl8.6.17-src.tar.gz
+        sha256: a3903371efcce8a405c5c245d029e9f6850258a60fa3761c4d58995610949b31
         x-checker-data:
           type: html
           url: https://sourceforge.net/projects/tcl/rss
           pattern: <link>(https://sourceforge.net/.+/tcl([\d\.]+\d)-src.tar.gz)/download</link>
           versions:
-            <: "9.0"  # Stop flathubbot checking for version 9.0
+            <: '9.0'  # Stop flathubbot checking for version 9.0
     subdir: unix
     post-install:
       - chmod 755 /app/lib/lib*tcl*.so
   - name: tk
     sources:
       - type: archive
-        url: https://sourceforge.net/projects/tcl/files/Tcl/8.6.13/tk8.6.13-src.tar.gz
-        sha256: 2e65fa069a23365440a3c56c556b8673b5e32a283800d8d9b257e3f584ce0675
+        url: https://sourceforge.net/projects/tcl/files/Tcl/8.6.17/tk8.6.17-src.tar.gz
+        sha256: e4982df6f969c08bf9dd858a6891059b4a3f50dc6c87c10abadbbe2fc4838946
         x-checker-data:
           type: html
           url: https://sourceforge.net/projects/tcl/rss
           pattern: <link>(https://sourceforge.net/.+/tk([\d\.]+\d)-src.tar.gz)/download</link>
           versions:
-            <: "9.0"  # Stop flathubbot checking for version 9.0
+            <: '9.0'  # Stop flathubbot checking for version 9.0
     subdir: unix
     post-install:
       - chmod 755 /app/lib/lib*tk*.so
@@ -52,8 +52,8 @@ modules:
       - install -Dm644 share/appdata/io.github.gtkwave.GTKWave.metainfo.xml /app/share/metainfo/io.github.gtkwave.GTKWave.metainfo.xml
     sources:
       - type: archive
-        url: https://sourceforge.net/projects/gtkwave/files/gtkwave-gtk3-3.3.122/gtkwave-gtk3-3.3.122.tar.gz
-        sha256: 6201b5f93dcaeafa92fc0ec4ad4baeaf60acf16fc8f019bbf061cf4ebf27938a
+        url: https://sourceforge.net/projects/gtkwave/files/gtkwave-gtk3-3.3.126/gtkwave-gtk3-3.3.126.tar.gz
+        sha256: 965019d74829746b5d1d382a9cf1e272246c91101d0e131f0da512c94ba5816a
         x-checker-data:
           type: html
           url: https://sourceforge.net/projects/gtkwave/rss
