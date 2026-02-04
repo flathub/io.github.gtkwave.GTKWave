@@ -17,8 +17,8 @@ modules:
   - name: tcl
     sources:
       - type: archive
-        url: https://sourceforge.net/projects/tcl/files/Tcl/8.6.13/tcl8.6.13-src.tar.gz
-        sha256: 43a1fae7412f61ff11de2cfd05d28cfc3a73762f354a417c62370a54e2caf066
+        url: https://sourceforge.net/projects/tcl/files/Tcl/8.6.17/tcl8.6.17-src.tar.gz
+        sha256: a3903371efcce8a405c5c245d029e9f6850258a60fa3761c4d58995610949b31
         x-checker-data:
           type: html
           url: https://sourceforge.net/projects/tcl/rss
@@ -31,8 +31,8 @@ modules:
   - name: tk
     sources:
       - type: archive
-        url: https://sourceforge.net/projects/tcl/files/Tcl/8.6.13/tk8.6.13-src.tar.gz
-        sha256: 2e65fa069a23365440a3c56c556b8673b5e32a283800d8d9b257e3f584ce0675
+        url: https://sourceforge.net/projects/tcl/files/Tcl/8.6.17/tk8.6.17-src.tar.gz
+        sha256: e4982df6f969c08bf9dd858a6891059b4a3f50dc6c87c10abadbbe2fc4838946
         x-checker-data:
           type: html
           url: https://sourceforge.net/projects/tcl/rss
