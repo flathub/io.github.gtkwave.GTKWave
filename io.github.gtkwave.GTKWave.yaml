@@ -13,6 +13,10 @@ finish-args:
   - --socket=pulseaudio
   - --socket=wayland
   - --socket=cups
+cleanup:
+  - /include
+  - /man
+  - /share/man
 modules:
   - name: tcl
     sources:
