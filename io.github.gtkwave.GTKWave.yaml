@@ -62,3 +62,5 @@ modules:
           type: html
           url: https://sourceforge.net/projects/gtkwave/rss
           pattern: <link>(https://sourceforge.net/.+/gtkwave-gtk3-([\d\.]+\d).tar.gz)/download</link>
+      - type: patch
+        path: appdata.patch

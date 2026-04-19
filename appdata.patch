@@ -1,12 +1,17 @@
 diff --git a/share/appdata/io.github.gtkwave.GTKWave.metainfo.xml b/share/appdata/io.github.gtkwave.GTKWave.metainfo.xml
-index efb48f4..0dee136 100644
+index 8ea431d..95d446f 100644
 --- a/share/appdata/io.github.gtkwave.GTKWave.metainfo.xml
 +++ b/share/appdata/io.github.gtkwave.GTKWave.metainfo.xml
-@@ -45,7 +45,6 @@
-       </description>
-     </release>
-
--  <releases>
-     <release version="3.3.120" date="2024-06-14">
-       <description>
-         <p>
+@@ -23,10 +23,12 @@
+ 
+   <url type="homepage">http://gtkwave.sourceforge.net/</url>
+   <url type="bugtracker">https://github.com/gtkwave/gtkwave/issues</url>
++  <url type="vcs-browser">https://github.com/gtkwave/gtkwave</url>
+   <url type="help">https://github.com/gtkwave/gtkwave</url>
+ 
+   <screenshots>
+     <screenshot type="default">
++      <caption>Main GTKWave waveform viewer window</caption>
+       <image>http://gtkwave.sourceforge.net/gtkwave-appdata.png</image>
+     </screenshot>
+   </screenshots>
