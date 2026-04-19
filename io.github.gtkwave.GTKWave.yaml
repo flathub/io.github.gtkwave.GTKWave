@@ -54,6 +54,10 @@ modules:
       - --disable-mime-update
     post-install:
       - install -Dm644 share/appdata/io.github.gtkwave.GTKWave.metainfo.xml /app/share/metainfo/io.github.gtkwave.GTKWave.metainfo.xml
+      - |
+        for mime in share/mime/packages/x-gtkwave-extension-*.xml; do
+          install -Dm644 "${mime}" "/app/share/mime/packages/io.github.gtkwave.GTKWave-$(basename "${mime#share/mime/packages/x-gtkwave-extension-}")"
+        done
     sources:
       - type: archive
         url: https://sourceforge.net/projects/gtkwave/files/gtkwave-gtk3-3.3.127/gtkwave-gtk3-3.3.127.tar.gz
