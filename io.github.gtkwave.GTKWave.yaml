@@ -19,6 +19,9 @@ cleanup:
   - /share/man
 modules:
   - name: tcl
+    subdir: unix
+    post-install:
+      - chmod 755 /app/lib/lib*tcl*.so
     sources:
       - type: archive
         url: https://sourceforge.net/projects/tcl/files/Tcl/8.6.18/tcl8.6.18-src.tar.gz
@@ -29,10 +32,12 @@ modules:
           pattern: <link>(https://sourceforge.net/.+/tcl([\d\.]+\d)-src.tar.gz)/download</link>
           versions:
             <: '9.0'  # Stop flathubbot checking for version 9.0
+  - name: tk
     subdir: unix
     post-install:
-      - chmod 755 /app/lib/lib*tcl*.so
-  - name: tk
+      - chmod 755 /app/lib/lib*tk*.so
+    cleanup:
+      - /lib/tk*/demos
     sources:
       - type: archive
         url: https://sourceforge.net/projects/tcl/files/Tcl/8.6.18/tk8.6.18-src.tar.gz
@@ -43,9 +48,7 @@ modules:
           pattern: <link>(https://sourceforge.net/.+/tk([\d\.]+\d)-src.tar.gz)/download</link>
           versions:
             <: '9.0'  # Stop flathubbot checking for version 9.0
-    subdir: unix
-    post-install:
-      - chmod 755 /app/lib/lib*tk*.so
+
   - name: gtkwave
     config-opts:
       - --enable-gtk3
